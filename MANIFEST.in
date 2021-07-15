@@ -1,0 +1,2 @@
+include LICENSE
+include tap_order_hub/schemas/*.json

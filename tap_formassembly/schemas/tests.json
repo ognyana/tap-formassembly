@@ -1,0 +1,77 @@
+{
+    "type": "object",
+    "properties": {
+        "firstName": {
+            "type": ["null", "string"]
+        },
+        "lastName": {
+            "type": ["null", "string"]
+        },
+        "jobTitle": {
+            "type": ["null", "string"]
+        },
+        "department": {
+            "type": ["null", "string"]
+        },
+        "month": {
+            "type": ["null", "string"]
+        },
+        "day": {
+            "type": ["null", "string"]
+        },
+        "year": {
+            "type": ["null", "string"]
+        },
+        "comment": {
+            "type": ["null", "string"]
+        },
+        "formName": {
+            "type": ["null", "string"]
+        },
+        "creationDate": {
+            "type": "string",
+            "format": "datetime"
+        },
+        "modifiedDate": {
+            "type": "string",
+            "format": "datetime"
+        },
+        "submittedDate": {
+            "type": "string",
+            "format": "datetime"
+        },
+        "completionTime": {
+            "type": ["null", "string"]
+        },
+        "responseHtmlBeta": {
+            "type": ["null", "string"]
+        },
+        "responseHtml": {
+            "type": ["null", "string"]
+        },
+        "responseText": {
+            "type": ["null", "string"]
+        },
+        "response": {
+            "type": ["null", "string"]
+        },
+        "responseUrl": {
+            "type": ["null", "string"]
+        },
+        "fileList": {
+            "type": ["null", "string"]
+        },
+        "unprotectedFileList": {
+            "type": ["null", "string"]
+        },
+        "responseId": {
+            "type": ["null", "string"]
+        },
+        "referrer": {
+            "type": ["null", "string"]
+        },
+        "ipAddress": {
+            "type": ["null", "string"]
+        }
+    }
+}
