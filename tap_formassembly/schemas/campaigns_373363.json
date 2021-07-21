@@ -2,13 +2,13 @@
     "type": "object",
     "properties": {
         "accountName": {
-            "type": ["null", "string"]
+            "type": "string",
         },
         "salesRepName": {
-            "type": ["null", "string"]
+            "type": "string"
         },
         "salesRepEmail": {
-            "type": ["null", "string"]
+            "type": "string"
         },
         "typeOfSale": {
             "type": ["null", "string"]
