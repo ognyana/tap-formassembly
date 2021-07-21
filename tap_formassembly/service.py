@@ -18,8 +18,8 @@ WORD_REGEX = re.compile("[^A-Za-z]+")
 class FormAssemblyService:
     def __init__(self, stream, schema, config):
         self.config = config
-        self.stream = stream.tap_stream_id
-        self.form_id = stream.metadata[0]['form_id']
+        self.stream = stream
+        self.form_id = stream.split("_")[1]
         self.schema = schema
         self.access_token = config['accessToken']
         self.session = requests.Session()

@@ -39,7 +39,7 @@ def sync(config, state, catalog):
             key_properties=stream.key_properties,
         )
 
-        svc = FormAssemblyService(stream, schema, config)
+        svc = FormAssemblyService(stream.tap_stream_id, schema, config)
         svc.get_form_responses()
 
         singer.write_state({

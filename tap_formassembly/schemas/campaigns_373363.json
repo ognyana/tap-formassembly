@@ -1,0 +1,503 @@
+{
+    "type": "object",
+    "properties": {
+        "accountName": {
+            "type": ["null", "string"]
+        },
+        "salesRepName": {
+            "type": ["null", "string"]
+        },
+        "salesRepEmail": {
+            "type": ["null", "string"]
+        },
+        "typeOfSale": {
+            "type": ["null", "string"]
+        },
+        "solution": {
+            "type": ["null", "string"]
+        },
+        "objective": {
+            "type": ["null", "string"]
+        },
+        "campaignName": {
+            "type": ["null", "string"]
+        },
+        "cycleBudget": {
+            "type": ["null", "string"]
+        },
+        "additionalBudgetLeadInformation": {
+            "type": ["null", "string"]
+        },
+        "remainingCycles": {
+            "type": ["null", "string"]
+        },
+        "isTheClientRenewingOrShouldTheCampaignNotBeMigratedToReachlocal": {
+            "type": ["null", "string"]
+        },
+        "pleaseExplain": {
+            "type": ["null", "string"]
+        },
+        "startDate": {
+            "type": ["null", "string"]
+        },
+        "averageTransactionValue": {
+            "type": ["null", "string"]
+        },
+        "campaignFocus": {
+            "type": ["null", "string"]
+        },
+        "campaignCategorySubCategory": {
+            "type": ["null", "string"]
+        },
+        "advertiserWebsiteUrl": {
+            "type": ["null", "string"]
+        },
+        "isThisAThrivehiveCreatedWebsite": {
+            "type": ["null", "string"]
+        },
+        "requiredToUseLandingPage": {
+            "type": ["null", "string"]
+        },
+        "provideLandingPageUrl": {
+            "type": ["null", "string"]
+        },
+        "localAreaCodePreference": {
+            "type": ["null", "string"]
+        },
+        "primaryNumberToBeProvisioned": {
+            "type": ["null", "string"]
+        },
+        "doesThePrimaryBusinessNumberNeedToForwardToADifferentNumberThanWhatIsListedOnTheWebsite": {
+            "type": ["null", "string"]
+        },
+        "forwardingNumber": {
+            "type": ["null", "string"]
+        },
+        "targetingType": {
+            "type": ["null", "string"]
+        },
+        "targetingAddress": {
+            "type": ["null", "string"]
+        },
+        "radiusMileKilometerDistance": {
+            "type": ["null", "string"]
+        },
+        "cityDmaTargetingDetails": {
+            "type": ["null", "string"]
+        },
+        "areasToExcludeThatAreInTargetArea": {
+            "type": ["null", "string"]
+        },
+        "areasToIncludeThatAreNotInTargetArea": {
+            "type": ["null", "string"]
+        },
+        "additionalKeywordNotes": {
+            "type": ["null", "string"]
+        },
+        "additionalNotes": {
+            "type": ["null", "string"]
+        },
+        "clientSContactName": {
+            "type": ["null", "string"]
+        },
+        "clientSContactNumber": {
+            "type": ["null", "string"]
+        },
+        "clientSContactEmail": {
+            "type": ["null", "string"]
+        },
+        "advertiserBusinessAddress": {
+            "type": ["null", "string"]
+        },
+        "advertiserMainBusinessNumber": {
+            "type": ["null", "string"]
+        },
+        "doesTheClientSBusinessHaveMoreThanOneWebsiteAndOrDomain": {
+            "type": ["null", "string"]
+        },
+        "pleaseIncludeAnyAdditionalDomainS": {
+            "type": ["null", "string"]
+        },
+        "canWePublishTheClientSBusinessAddress": {
+            "type": ["null", "string"]
+        },
+        "targetGeo": {
+            "type": ["null", "string"]
+        },
+        "isYourClientUsingGoogleAnalyticsForTheirWebsite": {
+            "type": ["null", "string"]
+        },
+        "whatIsTheFirstTopicYourClientWouldLikeToRankFor": {
+            "type": ["null", "string"]
+        },
+        "whatIsTheSecondTopicYourClientWouldLikeToRankFor": {
+            "type": ["null", "string"]
+        },
+        "googleMyBusinessPageLink": {
+            "type": ["null", "string"]
+        },
+        "businessDescriptionPreferences": {
+            "type": ["null", "string"]
+        },
+        "mondayOpen": {
+            "type": ["null", "string"]
+        },
+        "mondayClose": {
+            "type": ["null", "string"]
+        },
+        "tuesdayOpen": {
+            "type": ["null", "string"]
+        },
+        "tuesdayClose": {
+            "type": ["null", "string"]
+        },
+        "wednesdayOpen": {
+            "type": ["null", "string"]
+        },
+        "wednesdayClose": {
+            "type": ["null", "string"]
+        },
+        "thursdayOpen": {
+            "type": ["null", "string"]
+        },
+        "thursdayClose": {
+            "type": ["null", "string"]
+        },
+        "fridayOpen": {
+            "type": ["null", "string"]
+        },
+        "fridayClose": {
+            "type": ["null", "string"]
+        },
+        "saturdayOpen": {
+            "type": ["null", "string"]
+        },
+        "saturdayClose": {
+            "type": ["null", "string"]
+        },
+        "sundayOpen": {
+            "type": ["null", "string"]
+        },
+        "sundayClose": {
+            "type": ["null", "string"]
+        },
+        "editThisText": {
+            "type": ["null", "string"]
+        },
+        "emailAddressToThePersonThatWillGrantLocaliqAdminAccessToTheAdvertiserSFacebookPage": {
+            "type": ["null", "string"]
+        },
+        "facebookPageUrl": {
+            "type": ["null", "string"]
+        },
+        "facebookCampaignObjective": {
+            "type": ["null", "string"]
+        },
+        "geoTargetingType": {
+            "type": ["null", "string"]
+        },
+        "geoTargetingDetails": {
+            "type": ["null", "string"]
+        },
+        "pleaseListTheAddressToUse": {
+            "type": ["null", "string"]
+        },
+        "radiusMileDistance": {
+            "type": ["null", "string"]
+        },
+        "minimumAge": {
+            "type": ["null", "string"]
+        },
+        "maxiumAge": {
+            "type": ["null", "string"]
+        },
+        "gender": {
+            "type": ["null", "string"]
+        },
+        "audienceTargetingDetails": {
+            "type": ["null", "string"]
+        },
+        "whatIsTheClientSWebsiteHomepageUrl": {
+            "type": ["null", "string"]
+        },
+        "isThisAFlightedCampaign": {
+            "type": ["null", "string"]
+        },
+        "endDate": {
+            "type": ["null", "string"]
+        },
+        "websiteHighPriorityPageUrls": {
+            "type": ["null", "string"]
+        },
+        "pleaseSelectAllTacticsYouWouldLikeToSetUpForThisCampaign": {
+            "type": ["null", "string"]
+        },
+        "geofenceStrategySelection": {
+            "type": ["null", "string"]
+        },
+        "wouldYouLikeToIncludeOverTheTopConnectedTvInventoryInThisCampaignRequiresVideoAdCreative": {
+            "type": ["null", "string"]
+        },
+        "additionalCampaignRequests": {
+            "type": ["null", "string"]
+        },
+        "primaryBusinessNumber": {
+            "type": ["null", "string"]
+        },
+        "whatKindOfContentIsClientInterestedIn": {
+            "type": ["null", "string"]
+        },
+        "whatShouldTheToneOfTheContentBe": {
+            "type": ["null", "string"]
+        },
+        "clientApprovalNeedForPostResponsesComments": {
+            "type": ["null", "string"]
+        },
+        "cmsLoginInfo": {
+            "type": ["null", "string"]
+        },
+        "reviewSiteLoginInfo": {
+            "type": ["null", "string"]
+        },
+        "maximumAge": {
+            "type": ["null", "string"]
+        },
+        "selectACallToActionButton": {
+            "type": ["null", "string"]
+        },
+        "willTheClientBeProvidingCreativeToUse": {
+            "type": ["null", "string"]
+        },
+        "landingPageUrl": {
+            "type": ["null", "string"]
+        },
+        "doesTheClientWantToFocusOnATimedEventSuchAsAPromotionOrSale": {
+            "type": ["null", "string"]
+        },
+        "ifYesWhatAreTheDetailsOfThisEvent": {
+            "type": ["null", "string"]
+        },
+        "doesTheClientHaveAFirmStartDateToTheirCampaign": {
+            "type": ["null", "string"]
+        },
+        "firmStartDate": {
+            "type": ["null", "string"]
+        },
+        "doesTheClientHaveAFirmEndDateToTheirCampaign": {
+            "type": ["null", "string"]
+        },
+        "firmEndDate": {
+            "type": ["null", "string"]
+        },
+        "maid": {
+            "type": ["null", "string"]
+        },
+        "businessName": {
+            "type": ["null", "string"]
+        },
+        "businessPhoneNumber": {
+            "type": ["null", "string"]
+        },
+        "businessPhysicalAddressAndWebsiteUrl": {
+            "type": ["null", "string"]
+        },
+        "videoFocusType": {
+            "type": ["null", "string"]
+        },
+        "videoFocusInfo": {
+            "type": ["null", "string"]
+        },
+        "scriptRequirements": {
+            "type": ["null", "string"]
+        },
+        "ifTheClientIsProvidingTheScriptForTheVideoPleaseUploadTheScriptToTheSalesforceRecordAsAnAttachmentHasTheScriptBeenUploadedToSalesforce": {
+            "type": ["null", "string"]
+        },
+        "scriptBulletPoints": {
+            "type": ["null", "string"]
+        },
+        "voiceTalentPreference": {
+            "type": ["null", "string"]
+        },
+        "musicSelection": {
+            "type": ["null", "string"]
+        },
+        "ifTheClientIsProvidingLogosPreviousAdsOrStockImagesForAdvertisingPleaseAttachAssetsToTheNotesAttachmentsSectionInTheSalesforceAccountThisIncludesTheStyleGuideForYourLogoImagesAndColorCodesHaveAllAssetsBeenUploadedToSalesforce": {
+            "type": ["null", "string"]
+        },
+        "productionNotes": {
+            "type": ["null", "string"]
+        },
+        "shouldTheVideoProductionTeamWorkDirectlyWithTheClientToGatherAssetsInstructionsForRevisionsAndFinalApproval": {
+            "type": ["null", "string"]
+        },
+        "willTheAdsBeScheduledToRunDuringCertainTimes": {
+            "type": ["null", "string"]
+        },
+        "weekdayStartEndTimes": {
+            "type": ["null", "string"]
+        },
+        "weekendStartEndTimes": {
+            "type": ["null", "string"]
+        },
+        "targetViewer": {
+            "type": ["null", "string"]
+        },
+        "numberOfAdGroups": {
+            "type": ["null", "string"]
+        },
+        "adGroupName": {
+            "type": ["null", "string"]
+        },
+        "pleaseProvideTheLinkToTheYoutubeVideo": {
+            "type": ["null", "string"]
+        },
+        "additionalYoutubeVideoLink": {
+            "type": ["null", "string"]
+        },
+        "specificSubpageUrlBeingPromoted": {
+            "type": ["null", "string"]
+        },
+        "howShouldTheCampaignBeTargeted": {
+            "type": ["null", "string"]
+        },
+        "targetGender": {
+            "type": ["null", "string"]
+        },
+        "targetAge": {
+            "type": ["null", "string"]
+        },
+        "targetParentalStatus": {
+            "type": ["null", "string"]
+        },
+        "targetHouseholdIncome": {
+            "type": ["null", "string"]
+        },
+        "audiences": {
+            "type": ["null", "string"]
+        },
+        "affinityAudience": {
+            "type": ["null", "string"]
+        },
+        "category": {
+            "type": ["null", "string"]
+        },
+        "subcategory": {
+            "type": ["null", "string"]
+        },
+        "specifics": {
+            "type": ["null", "string"]
+        },
+        "details": {
+            "type": ["null", "string"]
+        },
+        "inMarketAudience": {
+            "type": ["null", "string"]
+        },
+        "lifeEventsAudience": {
+            "type": ["null", "string"]
+        },
+        "willTheClientBeProvidingAClientList": {
+            "type": ["null", "string"]
+        },
+        "willTheClientBeProvidingProvidingACompanionBannerAd": {
+            "type": ["null", "string"]
+        },
+        "doesTheClientHaveALinkedinCompanyPage": {
+            "type": ["null", "string"]
+        },
+        "pleaseProvideTheLinkToTheirAccount": {
+            "type": ["null", "string"]
+        },
+        "linkedinCampaignObjective": {
+            "type": ["null", "string"]
+        },
+        "age": {
+            "type": ["null", "string"]
+        },
+        "areThereAnyKeyDifferentiatorsYouWouldLikeToHighlightAsPartOfThisCampaign": {
+            "type": ["null", "string"]
+        },
+        "eventDetails": {
+            "type": ["null", "string"]
+        },
+        "whatTypeOfVisualStrategyDoesYourClientWantToEmploy": {
+            "type": ["null", "string"]
+        },
+        "whatProductSServiceSOfferSShouldBePromotedInThisCampaign": {
+            "type": ["null", "string"]
+        },
+        "doesTheClientHaveAnyBrandGuidelines": {
+            "type": ["null", "string"]
+        },
+        "detailedTargeting": {
+            "type": ["null", "string"]
+        },
+        "selectYourDetailedTargetingPreferences": {
+            "type": ["null", "string"]
+        },
+        "primaryPerformanceExpectation": {
+            "type": ["null", "string"]
+        },
+        "ifOtherPleaseExplain": {
+            "type": ["null", "string"]
+        },
+        "javascriptactive": {
+            "type": ["null", "string"]
+        },
+        "moreBrowserInfo": {
+            "type": ["null", "string"]
+        },
+        "formName": {
+            "type": ["null", "string"]
+        },
+        "creationDate": {
+            "type": "string",
+            "format": "datetime"
+        },
+        "modifiedDate": {
+            "type": "string",
+            "format": "datetime"
+        },
+        "submittedDate": {
+            "type": "string",
+            "format": "datetime"
+        },
+        "completionTime": {
+            "type": ["null", "string"]
+        },
+        "responseHtmlBeta": {
+            "type": ["null", "string"]
+        },
+        "responseHtml": {
+            "type": ["null", "string"]
+        },
+        "responseText": {
+            "type": ["null", "string"]
+        },
+        "response": {
+            "type": ["null", "string"]
+        },
+        "responseUrl": {
+            "type": ["null", "string"]
+        },
+        "resumeEmail": {
+            "type": ["null", "string"]
+        },
+        "fileList": {
+            "type": ["null", "string"]
+        },
+        "unprotectedFileList": {
+            "type": ["null", "string"]
+        },
+        "responseId": {
+            "type": ["null", "string"]
+        },
+        "referrer": {
+            "type": ["null", "string"]
+        },
+        "ipAddress":{
+            "type": ["null", "string"]
+        }
+    }
+}
