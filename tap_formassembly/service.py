@@ -56,14 +56,13 @@ class FormAssemblyService:
 
     def get_form_responses(self):
         """ Sync form data """
-        url = self.get_url(f"/responses/export/{self.form_id}.csv")
+        url = self.get_url(f"/api_v1/responses/export/{self.form_id}.csv")
         date_range = self.parse_range(self.config.get('dateRange'))
         LOGGER.info('Date range: ' + str(date_range))
 
         params = {
             "date_from": date_range['start'],
             "date_to": date_range['end']
-            # "filter": 'all' with not completed
         }
 
         form_responses = self.request(url, params, as_csv=True)
@@ -73,8 +72,10 @@ class FormAssemblyService:
 
             for row in form_responses:
                 row = {self.camel(k): v for k, v in row.items()}
-                item = transformer.transform(row, self.schema)
-                singer.write_record(self.stream, item, time_extracted=time_extracted)
+
+                if row['accountName']:
+                    item = transformer.transform(row, self.schema)
+                    singer.write_record(self.stream, item, time_extracted=time_extracted)
 
     def parse_range(self, date_range):
         if date_range == 'YESTERDAY':
