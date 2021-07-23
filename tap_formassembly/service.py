@@ -52,19 +52,17 @@ class FormAssemblyService:
 
     def map_result(self, result):
         """ Change response structure """
-
         responses = []
         for response in result['responses'].items():
             field_values = {}
             res = nested_lookup('field', response[1])
+            flat_list = [item for sublist in res for item in sublist]
 
-            for fieldset in res:
-                for field in fieldset:
-                    if isinstance(field, dict):
-                        if field['@type'] and field['@type'] != 'hidden':
-                            for key, value in self.schema['properties'].items():
-                                if value['id'] == field['@id']:
-                                    field_values[key] = field['value']
+            for field in flat_list:
+                if isinstance(field, dict):
+                    for key, value in self.schema['properties'].items():
+                        if value['id'] == field['@id']:
+                            field_values[key] = field['value']
 
             responses.append(field_values)
 
