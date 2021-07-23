@@ -2,11 +2,11 @@ import re
 import singer
 import backoff
 import requests
-import csv
-import codecs
+import json
 from datetime import datetime, timedelta
 from singer import Transformer, utils
-
+import xmltodict
+from nested_lookup import nested_lookup
 
 LOGGER = singer.get_logger()
 
@@ -31,17 +31,17 @@ class FormAssemblyService:
         giveup=lambda e: e.response is not None and 400 <= e.response.status_code < 500,
         factor=2
     )
-    def request(self, url, params=None, as_csv=False):
+    def request(self, url, params=None, is_xml=False):
         params = params or {}
         headers = {"Accept": "application/json"}
         params['access_token'] = self.access_token
 
-        if as_csv:
-            download = requests.get(url, params=params, headers=headers)
+        if is_xml:
+            data = requests.get(url, params=params, headers=headers)
             LOGGER.info("GET {}".format(url))
-            csv_reader = csv.DictReader(codecs.iterdecode(download.content.splitlines(), 'utf-8'))
+            result = json.dumps(xmltodict.parse(data.text))
 
-            return csv_reader
+            return self.map_result(json.loads(result))
 
         req = requests.Request("GET", url=url, params=params, headers=headers).prepare()
         LOGGER.info("GET {}".format(req.url))
@@ -50,13 +50,33 @@ class FormAssemblyService:
 
         return resp.json()
 
+    def map_result(self, result):
+        """ Change response structure """
+
+        responses = []
+        for response in result['responses'].items():
+            field_values = {}
+            res = nested_lookup('field', response[1])
+
+            for fieldset in res:
+                for field in fieldset:
+                    if isinstance(field, dict):
+                        if field['@type'] and field['@type'] != 'hidden':
+                            for key, value in self.schema['properties'].items():
+                                if value['id'] == field['@id']:
+                                    field_values[key] = field['value']
+
+            responses.append(field_values)
+
+        return responses
+
     def get_url(self, endpoint):
         """ Get endpoint URL """
         return self.config.get('baseUrl') + endpoint
 
     def get_form_responses(self):
         """ Sync form data """
-        url = self.get_url(f"/api_v1/responses/export/{self.form_id}.csv")
+        url = self.get_url(f"/api_v1/responses/export/{self.form_id}.xml")
         date_range = self.parse_range(self.config.get('dateRange'))
         LOGGER.info('Date range: ' + str(date_range))
 
@@ -65,17 +85,14 @@ class FormAssemblyService:
             "date_to": date_range['end']
         }
 
-        form_responses = self.request(url, params, as_csv=True)
+        form_responses = self.request(url, params, is_xml=True)
 
         with Transformer() as transformer:
             time_extracted = utils.now()
 
             for row in form_responses:
-                row = {self.camel(k): v for k, v in row.items()}
-
-                if row['accountName']:
-                    item = transformer.transform(row, self.schema)
-                    singer.write_record(self.stream, item, time_extracted=time_extracted)
+                item = transformer.transform(row, self.schema)
+                singer.write_record(self.stream, item, time_extracted=time_extracted)
 
     def parse_range(self, date_range):
         if date_range == 'YESTERDAY':
@@ -98,9 +115,3 @@ class FormAssemblyService:
                 microsecond=0, second=59, minute=59, hour=23
             ).strftime(API_DATE_TIME_FORMAT)
         }
-
-    @staticmethod
-    def camel(chars):
-        """ String to camel case """
-        words = WORD_REGEX.split(chars)
-        return "".join(w.lower() if i is 0 else w.title() for i, w in enumerate(words))

@@ -13,7 +13,9 @@ setup(
     install_requires=[
         "singer-python",
         'requests',
-        'backoff'
+        'backoff',
+        'xmltodict',
+        'nested-lookup'
    ],
     entry_points='''
        [console_scripts]

@@ -3,501 +3,846 @@
     "properties": {
         "accountName": {
             "type": "string",
+            "id": "tfa_4"
         },
         "salesRepName": {
-            "type": "string"
+            "type": "string",
+            "id": "tfa_5"
         },
         "salesRepEmail": {
-            "type": "string"
+            "type": "string",
+            "id": "tfa_9"
         },
         "typeOfSale": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_11"
         },
         "solution": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_69"
         },
-        "objective": {
-            "type": ["null", "string"]
+        "objective1": {
+            "type": ["null", "string"],
+            "id": "tfa_7240"
         },
-        "campaignName": {
-            "type": ["null", "string"]
+        "objective2": {
+            "type": ["null", "string"],
+            "id": "tfa_12396"
+        },
+        "objective3": {
+            "type": ["null", "string"],
+            "id": "tfa_12402"
+        },
+        "objective4": {
+            "type": ["null", "string"],
+            "id": "tfa_12408"
+        },
+        "objective5": {
+            "type": ["null", "string"],
+            "id": "tfa_12414"
+        },
+        "campaignName1": {
+            "type": ["null", "string"],
+            "id": "tfa_8176"
+        },
+        "campaignName2": {
+            "type": ["null", "string"],
+            "id": "tfa_7335"
         },
         "cycleBudget": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_142"
         },
-        "additionalBudgetLeadInformation": {
-            "type": ["null", "string"]
+        "additionalBudget": {
+            "type": ["null", "string"],
+            "id": "tfa_7458"
         },
         "remainingCycles": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_149"
         },
-        "isTheClientRenewingOrShouldTheCampaignNotBeMigratedToReachlocal": {
-            "type": ["null", "string"]
+        "campaignNotBeMigratedToReachlocal": {
+            "type": ["null", "string"],
+            "id": "tfa_155"
         },
         "pleaseExplain": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_1399"
         },
-        "startDate": {
-            "type": ["null", "string"]
+        "startDate1": {
+            "type": ["null", "string"],
+            "id": "tfa_4589"
         },
         "averageTransactionValue": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_1418"
         },
         "campaignFocus": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_534"
         },
-        "campaignCategorySubCategory": {
-            "type": ["null", "string"]
+        "campaignCategorySubCategory1": {
+            "type": ["null", "string"],
+            "id": "tfa_7228"
         },
-        "advertiserWebsiteUrl": {
-            "type": ["null", "string"]
+        "advertiserWebsiteUrl1": {
+            "type": ["null", "string"],
+            "id": "tfa_7230"
         },
-        "isThisAThrivehiveCreatedWebsite": {
-            "type": ["null", "string"]
+        "isThrivehiveWebsite1": {
+            "type": ["null", "string"],
+            "id": "tfa_7559"
         },
         "requiredToUseLandingPage": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_7551"
         },
         "provideLandingPageUrl": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_7553"
         },
-        "localAreaCodePreference": {
-            "type": ["null", "string"]
+        "targetingType1": {
+            "type": ["null", "string"],
+            "id": "tfa_1033"
+        },
+        "targetingAddress1": {
+            "type": ["null", "string"],
+            "id": "tfa_1105"
+        },
+        "radiusMileKilometerDistance1": {
+            "type": ["null", "string"],
+            "id": "tfa_1504"
+        },
+        "cityDmaTargetingDetails1": {
+            "type": ["null", "string"],
+            "id": "tfa_1043"
+        },
+        "areasToExcludeThatAreInTargetArea1": {
+            "type": ["null", "string"],
+            "id": "tfa_1370"
+        },
+        "areasToIncludeThatAreNotInTargetArea1": {
+            "type": ["null", "string"],
+            "id": "tfa_1108"
+        },
+        "additionalKeywordNotes1": {
+            "type": ["null", "string"],
+            "id": "tfa_1110"
+        },
+        "additionalNotes1": {
+            "type": ["null", "string"],
+            "id": "tfa_7238"
+        },
+        "localAreaCodePreference1": {
+            "type": ["null", "string"],
+            "id": "tfa_7682"
+        },
+        "localAreaCodePreference2": {
+            "type": ["null", "string"],
+            "id": "tfa_7706"
         },
         "primaryNumberToBeProvisioned": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_7702"
         },
-        "doesThePrimaryBusinessNumberNeedToForwardToADifferentNumberThanWhatIsListedOnTheWebsite": {
-            "type": ["null", "string"]
+        "useDifferentBusinessNumber": {
+            "type": ["null", "string"],
+            "id": "tfa_7703"
         },
         "forwardingNumber": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_7710"
         },
-        "targetingType": {
-            "type": ["null", "string"]
+        "clientContactName": {
+            "type": ["null", "string"],
+            "id": "tfa_7252"
         },
-        "targetingAddress": {
-            "type": ["null", "string"]
+        "clientContactNumber": {
+            "type": ["null", "string"],
+            "id": "tfa_7253"
         },
-        "radiusMileKilometerDistance": {
-            "type": ["null", "string"]
+        "clientContactEmail": {
+            "type": ["null", "string"],
+            "id": "tfa_7254"
         },
-        "cityDmaTargetingDetails": {
-            "type": ["null", "string"]
+        "campaignCategorySubCategory2": {
+            "type": ["null", "string"],
+            "id": "tfa_7256"
         },
-        "areasToExcludeThatAreInTargetArea": {
-            "type": ["null", "string"]
+        "advertiserWebsiteUrl2": {
+            "type": ["null", "string"],
+            "id": "tfa_7258"
         },
-        "areasToIncludeThatAreNotInTargetArea": {
-            "type": ["null", "string"]
-        },
-        "additionalKeywordNotes": {
-            "type": ["null", "string"]
-        },
-        "additionalNotes": {
-            "type": ["null", "string"]
-        },
-        "clientSContactName": {
-            "type": ["null", "string"]
-        },
-        "clientSContactNumber": {
-            "type": ["null", "string"]
-        },
-        "clientSContactEmail": {
-            "type": ["null", "string"]
+        "isThrivehiveWebsite2": {
+            "type": ["null", "string"],
+            "id": "tfa_7566"
         },
         "advertiserBusinessAddress": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_7260"
         },
         "advertiserMainBusinessNumber": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_7262"
         },
-        "doesTheClientSBusinessHaveMoreThanOneWebsiteAndOrDomain": {
-            "type": ["null", "string"]
+        "clientHaveMoreThanOneWebsite": {
+            "type": ["null", "string"],
+            "id": "tfa_4378"
         },
-        "pleaseIncludeAnyAdditionalDomainS": {
-            "type": ["null", "string"]
+        "additionalDomains": {
+            "type": ["null", "string"],
+            "id": "tfa_4384"
         },
-        "canWePublishTheClientSBusinessAddress": {
-            "type": ["null", "string"]
+        "publishClientBusinessAddress": {
+            "type": ["null", "string"],
+            "id": "tfa_3432"
         },
         "targetGeo": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_3437"
         },
-        "isYourClientUsingGoogleAnalyticsForTheirWebsite": {
-            "type": ["null", "string"]
+        "clientUseGoogleAnalytics": {
+            "type": ["null", "string"],
+            "id": "tfa_3440"
         },
-        "whatIsTheFirstTopicYourClientWouldLikeToRankFor": {
-            "type": ["null", "string"]
+        "firstTopicToRankFor": {
+            "type": ["null", "string"],
+            "id": "tfa_3451"
         },
-        "whatIsTheSecondTopicYourClientWouldLikeToRankFor": {
-            "type": ["null", "string"]
+        "secondTopicToRankFor": {
+            "type": ["null", "string"],
+            "id": "tfa_3453"
         },
         "googleMyBusinessPageLink": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_3456"
         },
         "businessDescriptionPreferences": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_7274"
         },
-        "mondayOpen": {
-            "type": ["null", "string"]
-        },
-        "mondayClose": {
-            "type": ["null", "string"]
-        },
-        "tuesdayOpen": {
-            "type": ["null", "string"]
-        },
-        "tuesdayClose": {
-            "type": ["null", "string"]
-        },
-        "wednesdayOpen": {
-            "type": ["null", "string"]
-        },
-        "wednesdayClose": {
-            "type": ["null", "string"]
-        },
-        "thursdayOpen": {
-            "type": ["null", "string"]
-        },
-        "thursdayClose": {
-            "type": ["null", "string"]
-        },
-        "fridayOpen": {
-            "type": ["null", "string"]
-        },
-        "fridayClose": {
-            "type": ["null", "string"]
-        },
-        "saturdayOpen": {
-            "type": ["null", "string"]
-        },
-        "saturdayClose": {
-            "type": ["null", "string"]
-        },
-        "sundayOpen": {
-            "type": ["null", "string"]
-        },
-        "sundayClose": {
-            "type": ["null", "string"]
+        "additionalNotes2": {
+            "type": ["null", "string"],
+            "id": "tfa_7264"
         },
         "editThisText": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_7432"
         },
-        "emailAddressToThePersonThatWillGrantLocaliqAdminAccessToTheAdvertiserSFacebookPage": {
-            "type": ["null", "string"]
+        "mondayOpen": {
+            "type": ["null", "string"],
+            "id": "tfa_7382"
+        },
+        "mondayClose": {
+            "type": ["null", "string"],
+            "id": "tfa_7383"
+        },
+        "tuesdayOpen": {
+            "type": ["null", "string"],
+            "id": "tfa_7384"
+        },
+        "tuesdayClose": {
+            "type": ["null", "string"],
+            "id": "tfa_7385"
+        },
+        "wednesdayOpen": {
+            "type": ["null", "string"],
+            "id": "tfa_7386"
+        },
+        "wednesdayClose": {
+            "type": ["null", "string"],
+            "id": "tfa_7387"
+        },
+        "thursdayOpen": {
+            "type": ["null", "string"],
+            "id": "tfa_7388"
+        },
+        "thursdayClose": {
+            "type": ["null", "string"],
+            "id": "tfa_7389"
+        },
+        "fridayOpen": {
+            "type": ["null", "string"],
+            "id": "tfa_7390"
+        },
+        "fridayClose": {
+            "type": ["null", "string"],
+            "id": "tfa_7391"
+        },
+        "saturdayOpen": {
+            "type": ["null", "string"],
+            "id": "tfa_7392"
+        },
+        "saturdayClose": {
+            "type": ["null", "string"],
+            "id": "tfa_7393"
+        },
+        "sundayOpen": {
+            "type": ["null", "string"],
+            "id": "tfa_7394"
+        },
+        "sundayClose": {
+            "type": ["null", "string"],
+            "id": "tfa_7395"
+        },
+        "personThatWillGrantAccessToFacebookPage": {
+            "type": ["null", "string"],
+            "id": "tfa_2302"
         },
         "facebookPageUrl": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_8169"
+        },
+        "advertiserWebsiteUrl3": {
+            "type": ["null", "string"],
+            "id": "tfa_2307"
+        },
+        "isThrivehiveWebsite3": {
+            "type": ["null", "string"],
+            "id": "tfa_7602"
         },
         "facebookCampaignObjective": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_2321"
         },
         "geoTargetingType": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_2747"
         },
         "geoTargetingDetails": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_2754"
         },
-        "pleaseListTheAddressToUse": {
-            "type": ["null", "string"]
+        "listTheAddressToUse": {
+            "type": ["null", "string"],
+            "id": "tfa_2758"
         },
         "radiusMileDistance": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_4268"
         },
         "minimumAge": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_2779"
         },
         "maxiumAge": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_2833"
         },
         "gender": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_2887"
         },
         "audienceTargetingDetails": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_4996"
         },
-        "whatIsTheClientSWebsiteHomepageUrl": {
-            "type": ["null", "string"]
+        "additionalNotes3": {
+            "type": ["null", "string"],
+            "id": "tfa_7313"
         },
-        "isThisAFlightedCampaign": {
-            "type": ["null", "string"]
+        "clientWebsiteUrl": {
+            "type": ["null", "string"],
+            "id": "tfa_7867"
+        },
+        "isFlightedCampaign": {
+            "type": ["null", "string"],
+            "id": "tfa_7890"
+        },
+        "startDate2": {
+            "type": ["null", "string"],
+            "id": "tfa_7891"
         },
         "endDate": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_7892"
         },
         "websiteHighPriorityPageUrls": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_8031"
         },
-        "pleaseSelectAllTacticsYouWouldLikeToSetUpForThisCampaign": {
-            "type": ["null", "string"]
+        "allTacticsToSetUpForCampaign": {
+            "type": ["null", "string"],
+            "id": "tfa_8035"
         },
         "geofenceStrategySelection": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_8052"
         },
-        "wouldYouLikeToIncludeOverTheTopConnectedTvInventoryInThisCampaignRequiresVideoAdCreative": {
-            "type": ["null", "string"]
+        "includeOverTheTopConnectedTvInventory": {
+            "type": ["null", "string"],
+            "id": "tfa_8050"
         },
         "additionalCampaignRequests": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_8162"
+        },
+        "personThatWillGrantAccessToFacebookPage2": {
+            "type": ["null", "string"],
+            "id": "tfa_7355"
+        },
+        "clientContactName2": {
+            "type": ["null", "string"],
+            "id": "tfa_73802"
+        },
+        "clientContactEmail2": {
+            "type": ["null", "string"],
+            "id": "tfa_7357"
         },
         "primaryBusinessNumber": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_7411"
         },
-        "whatKindOfContentIsClientInterestedIn": {
-            "type": ["null", "string"]
+        "campaignCategorySubCategory3": {
+            "type": ["null", "string"],
+            "id": "tfa_7413"
         },
-        "whatShouldTheToneOfTheContentBe": {
-            "type": ["null", "string"]
+        "advertiserWebsiteUrl4": {
+            "type": ["null", "string"],
+            "id": "tfa_7638"
         },
-        "clientApprovalNeedForPostResponsesComments": {
-            "type": ["null", "string"]
+        "isThrivehiveWebsite": {
+            "type": ["null", "string"],
+            "id": "tfa_7642"
+        },
+        "contentClientIsInterestedIn": {
+            "type": ["null", "string"],
+            "id": "tfa_7415"
+        },
+        "toneOfTheContent": {
+            "type": ["null", "string"],
+            "id": "tfa_7421"
+        },
+        "clientApprovalForPostResponsesComments": {
+            "type": ["null", "string"],
+            "id": "tfa_7417"
+        },
+        "facebookPageUrl1": {
+            "type": ["null", "string"],
+            "id": "tfa_7336"
         },
         "cmsLoginInfo": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_7423"
         },
         "reviewSiteLoginInfo": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_7425"
+        },
+        "additionalNotes4": {
+            "type": ["null", "string"],
+            "id": "tfa_7349"
+        },
+        "geoTargetingType1": {
+            "type": ["null", "string"],
+            "id": "tfa_73611"
+        },
+        "geoTargetingDetails1": {
+            "type": ["null", "string"],
+            "id": "tfa_73618"
+        },
+        "geoTargetingDetails2": {
+            "type": ["null", "string"],
+            "id": "tfa_73619"
+        },
+        "minimumAge1": {
+            "type": ["null", "string"],
+            "id": "tfa_73620"
         },
         "maximumAge": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_73659"
+        },
+        "gender1": {
+            "type": ["null", "string"],
+            "id": "tfa_73698"
         },
         "selectACallToActionButton": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_73701"
         },
-        "willTheClientBeProvidingCreativeToUse": {
-            "type": ["null", "string"]
+        "clientWillProvidingCreative": {
+            "type": ["null", "string"],
+            "id": "tfa_73716"
         },
         "landingPageUrl": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_12161"
         },
-        "doesTheClientWantToFocusOnATimedEventSuchAsAPromotionOrSale": {
-            "type": ["null", "string"]
+        "clientWantToFocusEventPromotionOrSale": {
+            "type": ["null", "string"],
+            "id": "tfa_12180"
         },
-        "ifYesWhatAreTheDetailsOfThisEvent": {
-            "type": ["null", "string"]
+        "detailsForPromotedEvent": {
+            "type": ["null", "string"],
+            "id": "tfa_12184"
         },
-        "doesTheClientHaveAFirmStartDateToTheirCampaign": {
-            "type": ["null", "string"]
+        "startDate3": {
+            "type": ["null", "string"],
+            "id": "tfa_12185"
+        },
+        "endDate1": {
+            "type": ["null", "string"],
+            "id": "tfa_12186"
+        },
+        "isFlightedCampaign1": {
+            "type": ["null", "string"],
+            "id": "tfa_12188"
+        },
+        "startDate4": {
+            "type": ["null", "string"],
+            "id": "tfa_12191"
+        },
+        "endDate2": {
+            "type": ["null", "string"],
+            "id": "tfa_12192"
+        },
+        "clientHaveFirmStartDateToTheirCampaign": {
+            "type": ["null", "string"],
+            "id": "tfa_12194"
         },
         "firmStartDate": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_12197"
         },
-        "doesTheClientHaveAFirmEndDateToTheirCampaign": {
-            "type": ["null", "string"]
+        "clientHaveFirmEndDateToTheirCampaign": {
+            "type": ["null", "string"],
+            "id": "tfa_12198"
         },
         "firmEndDate": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_12201"
         },
         "maid": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55519"
         },
         "businessName": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55520"
         },
         "businessPhoneNumber": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55521"
         },
         "businessPhysicalAddressAndWebsiteUrl": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55522"
         },
         "videoFocusType": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55523"
         },
         "videoFocusInfo": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55529"
         },
         "scriptRequirements": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55530"
         },
-        "ifTheClientIsProvidingTheScriptForTheVideoPleaseUploadTheScriptToTheSalesforceRecordAsAnAttachmentHasTheScriptBeenUploadedToSalesforce": {
-            "type": ["null", "string"]
+        "clientScript": {
+            "type": ["null", "string"],
+            "id": "tfa_55533"
         },
         "scriptBulletPoints": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55536"
         },
         "voiceTalentPreference": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55537"
         },
         "musicSelection": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55541"
         },
-        "ifTheClientIsProvidingLogosPreviousAdsOrStockImagesForAdvertisingPleaseAttachAssetsToTheNotesAttachmentsSectionInTheSalesforceAccountThisIncludesTheStyleGuideForYourLogoImagesAndColorCodesHaveAllAssetsBeenUploadedToSalesforce": {
-            "type": ["null", "string"]
+        "clientLogosPreviousAdsOrStockImagesForAdvertising": {
+            "type": ["null", "string"],
+            "id": "tfa_55549"
         },
         "productionNotes": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55554"
         },
-        "shouldTheVideoProductionTeamWorkDirectlyWithTheClientToGatherAssetsInstructionsForRevisionsAndFinalApproval": {
-            "type": ["null", "string"]
+        "startDate5": {
+            "type": ["null", "string"],
+            "id": "tfa_55555"
         },
-        "willTheAdsBeScheduledToRunDuringCertainTimes": {
-            "type": ["null", "string"]
+        "videoProductionGatherAssetsInstructionsForApproval": {
+            "type": ["null", "string"],
+            "id": "tfa_55556"
+        },
+        "adsScheduleToRunDuringCertainTimes": {
+            "type": ["null", "string"],
+            "id": "tfa_55740"
         },
         "weekdayStartEndTimes": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55743"
         },
         "weekendStartEndTimes": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55744"
         },
         "targetViewer": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55745"
+        },
+        "minimumAge2": {
+            "type": ["null", "string"],
+            "id": "tfa_55746"
+        },
+        "maximumAge1": {
+            "type": ["null", "string"],
+            "id": "tfa_55795"
         },
         "numberOfAdGroups": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55849"
+        },
+        "clientList": {
+            "type": ["null", "string"],
+            "id": "tfa_55909"
+        },
+        "clientCompanionBannerAd": {
+            "type": ["null", "string"],
+            "id": "tfa_55912"
         },
         "adGroupName": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55856"
         },
-        "pleaseProvideTheLinkToTheYoutubeVideo": {
-            "type": ["null", "string"]
+        "youtubeVideoLink": {
+            "type": ["null", "string"],
+            "id": "tfa_55858"
         },
         "additionalYoutubeVideoLink": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55859"
+        },
+        "advertiserWebsiteUrl5": {
+            "type": ["null", "string"],
+            "id": "tfa_55860"
         },
         "specificSubpageUrlBeingPromoted": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55861"
         },
         "howShouldTheCampaignBeTargeted": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55862"
         },
         "targetGender": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55866"
         },
         "targetAge": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55870"
         },
         "targetParentalStatus": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55878"
         },
         "targetHouseholdIncome": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55882"
         },
         "audiences": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55890"
         },
         "affinityAudience": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55894"
         },
         "category": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55895"
         },
         "subcategory": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55896"
         },
         "specifics": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55897"
         },
         "details": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55898"
         },
         "inMarketAudience": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55900"
+        },
+        "marketAudienceCategory": {
+            "type": ["null", "string"],
+            "id": "tfa_55901"
+        },
+        "marketAudienceSubcategory": {
+            "type": ["null", "string"],
+            "id": "tfa_55902"
+        },
+        "marketAudienceSpecifics": {
+            "type": ["null", "string"],
+            "id": "tfa_55903"
+        },
+        "marketAudienceDetails": {
+            "type": ["null", "string"],
+            "id": "tfa_55904"
         },
         "lifeEventsAudience": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_55906"
         },
-        "willTheClientBeProvidingAClientList": {
-            "type": ["null", "string"]
+        "lifeEventsAudienceCategory": {
+            "type": ["null", "string"],
+            "id": "tfa_55907"
         },
-        "willTheClientBeProvidingProvidingACompanionBannerAd": {
-            "type": ["null", "string"]
+        "clientHaveLinkedinCompanyPage": {
+            "type": ["null", "string"],
+            "id": "tfa_73722"
         },
-        "doesTheClientHaveALinkedinCompanyPage": {
-            "type": ["null", "string"]
-        },
-        "pleaseProvideTheLinkToTheirAccount": {
-            "type": ["null", "string"]
+        "clientLinkedinAccountLink": {
+            "type": ["null", "string"],
+            "id": "tfa_73725"
         },
         "linkedinCampaignObjective": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_73726"
+        },
+        "geoTargetingType2": {
+            "type": ["null", "string"],
+            "id": "tfa_73735"
         },
         "age": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_73740"
         },
-        "areThereAnyKeyDifferentiatorsYouWouldLikeToHighlightAsPartOfThisCampaign": {
-            "type": ["null", "string"]
+        "geoTargetingDetails3": {
+            "type": ["null", "string"],
+            "id": "tfa_73745"
+        },
+        "gender2": {
+            "type": ["null", "string"],
+            "id": "tfa_73746"
+        },
+        "landingPageUrl1": {
+            "type": ["null", "string"],
+            "id": "tfa_73749"
+        },
+        "highlightedKeyDifferentiators": {
+            "type": ["null", "string"],
+            "id": "tfa_73750"
+        },
+        "promoteEvent": {
+            "type": ["null", "string"],
+            "id": "tfa_73751"
         },
         "eventDetails": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_73754"
         },
-        "whatTypeOfVisualStrategyDoesYourClientWantToEmploy": {
-            "type": ["null", "string"]
+        "visualStrategy": {
+            "type": ["null", "string"],
+            "id": "tfa_73755"
         },
-        "whatProductSServiceSOfferSShouldBePromotedInThisCampaign": {
-            "type": ["null", "string"]
+        "serviceOfferPromotedInCampaign": {
+            "type": ["null", "string"],
+            "id": "tfa_73765"
         },
-        "doesTheClientHaveAnyBrandGuidelines": {
-            "type": ["null", "string"]
+        "clientBrandGuidelines": {
+            "type": ["null", "string"],
+            "id": "tfa_73769"
         },
         "detailedTargeting": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_73777"
         },
-        "selectYourDetailedTargetingPreferences": {
-            "type": ["null", "string"]
+        "detailedTargetingPreferences": {
+            "type": ["null", "string"],
+            "id": "tfa_73779"
         },
         "primaryPerformanceExpectation": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_882"
         },
-        "ifOtherPleaseExplain": {
-            "type": ["null", "string"]
-        },
-        "javascriptactive": {
-            "type": ["null", "string"]
+        "otherPrimaryPerformanceExpectation": {
+            "type": ["null", "string"],
+            "id": "tfa_1593"
         },
         "moreBrowserInfo": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "tfa_3422"
         },
         "formName": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "form_name"
         },
         "creationDate": {
             "type": "string",
-            "format": "datetime"
+            "format": "datetime",
+            "id": "created"
         },
         "modifiedDate": {
             "type": "string",
-            "format": "datetime"
+            "format": "datetime",
+            "id": "modified_date"
         },
         "submittedDate": {
             "type": "string",
-            "format": "datetime"
+            "format": "datetime",
+            "id": "date_submitted"
         },
         "completionTime": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "completion_time"
         },
         "responseHtmlBeta": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "response_html_beta"
         },
         "responseHtml": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "response_html"
         },
         "responseText": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "response_text"
         },
         "response": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "response"
         },
         "responseUrl": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "response_url"
         },
         "resumeEmail": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "resume_email"
         },
         "fileList": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "file_list"
         },
         "unprotectedFileList": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "unprotected_file_list"
         },
         "responseId": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "response_id"
         },
         "referrer": {
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "referrer"
         },
         "ipAddress":{
-            "type": ["null", "string"]
+            "type": ["null", "string"],
+            "id": "ip_address"
         }
     }
 }
