@@ -840,7 +840,7 @@
             "type": ["null", "string"],
             "id": "referrer"
         },
-        "ipAddress":{
+        "ipAddress": {
             "type": ["null", "string"],
             "id": "ip_address"
         }

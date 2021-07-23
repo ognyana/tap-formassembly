@@ -60,13 +60,16 @@ class FormAssemblyService:
 
             for field in flat_list:
                 if isinstance(field, dict):
-                    for key, value in self.schema['properties'].items():
-                        if value['id'] == field['@id']:
-                            field_values[key] = field['value']
+                    field_values[self.find_schema_key_by_id(field['@id'])] = field['value']
 
             responses.append(field_values)
 
         return responses
+
+    def find_schema_key_by_id(self, id):
+        for key, value in self.schema['properties'].items():
+            if value['id'] == id:
+                return key
 
     def get_url(self, endpoint):
         """ Get endpoint URL """
