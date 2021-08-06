@@ -22,34 +22,43 @@ class FormAssemblyService:
         self.form_id = stream.split("_")[1]
         self.schema = schema
         self.access_token = config['accessToken']
+        self.fault_tolerance = config['fault_tolerance']
+        self.props = schema["properties"]
         self.session = requests.Session()
 
-    @backoff.on_exception(
-        backoff.expo,
-        requests.exceptions.RequestException,
-        max_tries=5,
-        giveup=lambda e: e.response is not None and 400 <= e.response.status_code < 500,
-        factor=2
-    )
+    # @backoff.on_exception(
+    #     backoff.expo,
+    #     requests.exceptions.RequestException,
+    #     max_tries=5,
+    #     giveup=lambda e: e.response is not None and 400 <= e.response.status_code < 500,
+    #     factor=2
+    # )
     def request(self, url, params=None, is_xml=False):
         params = params or {}
         headers = {"Accept": "application/json"}
         params['access_token'] = self.access_token
-
+        result = None
         if is_xml:
-            data = requests.get(url, params=params, headers=headers)
-            LOGGER.info("GET {}".format(url))
-            result = json.dumps(xmltodict.parse(data.text))
-
-            return self.map_result(json.loads(result))
-
-        req = requests.Request("GET", url=url, params=params, headers=headers).prepare()
-        LOGGER.info("GET {}".format(req.url))
-        resp = self.session.send(req)
-        resp.raise_for_status()
-
-        return resp.json()
-
+            try:
+                data = requests.get(url, params=params, headers=headers)
+                LOGGER.info("GET {}".format(url))
+                LOGGER.info("Params")
+                LOGGER.info(params)
+                if data.status_code < 300:
+                    resultJson = json.dumps(xmltodict.parse(data.text.replace("\n"," ")))
+                    result = self.map_result(json.loads(resultJson))
+            except:
+                LOGGER.error("XML Failed")
+                if not self.fault_tolerance:
+                    LOGGER.error("Not fault tolerant FAIL.")
+                    raise
+        else:
+            req = requests.Request("GET", url=url, params=params, headers=headers).prepare()
+            LOGGER.info("GET {}".format(req.url))
+            resp = self.session.send(req)
+            resp.raise_for_status()
+            result = resp.json()
+        return result
     def map_result(self, result):
         """ Change response structure """
         responses = []
@@ -78,33 +87,47 @@ class FormAssemblyService:
     def get_form_responses(self):
         """ Sync form data """
         url = self.get_url(f"/api_v1/responses/export/{self.form_id}.xml")
-        date_range = self.parse_range(self.config.get('dateRange'))
-        LOGGER.info('Date range: ' + str(date_range))
+        date_ranges = self.parse_range(self.config.get('dateRange'))
+        prop_list = list(map(lambda x: x[0], self.props.items()))
+        for date_range in date_ranges:
+            params = {
+                "date_from": date_range['start'],
+                "date_to": date_range['end']
+            }
 
-        params = {
-            "date_from": date_range['start'],
-            "date_to": date_range['end']
-        }
+            form_responses = self.request(url, params, is_xml=True)
+            if form_responses:
+                with Transformer() as transformer:
+                    time_extracted = utils.now()
+                    for row in form_responses:
+                        record = {}
+                        item = transformer.transform(row, self.schema)
+                        record = {}
+                        for field in prop_list:
+                            if field in item:
+                                record[field] = item[field]
+                            else:
+                                record[field] = None
+                        singer.write_record(self.stream, record, time_extracted=time_extracted)
 
-        form_responses = self.request(url, params, is_xml=True)
-
-        with Transformer() as transformer:
-            time_extracted = utils.now()
-
-            for row in form_responses:
-                item = transformer.transform(row, self.schema)
-                singer.write_record(self.stream, item, time_extracted=time_extracted)
 
     def parse_range(self, date_range):
+        output = []
         if date_range == 'YESTERDAY':
             yesterday_date = datetime.today() - timedelta(days=1)
-            return self.format_range(yesterday_date, yesterday_date)
+            output.append(self.format_range(yesterday_date, yesterday_date))
         else:
+            range_size = 1
             range_parts = date_range.split(',')
             date_format = "%Y%m%d"
             start = datetime.strptime(range_parts[0], date_format)
             end = datetime.strptime(range_parts[1], date_format)
-            return self.format_range(start, end)
+            while (end - start).days >= (range_size - 1):
+                new_start = start + timedelta(days=range_size - 1)
+                output.append(self.format_range(start, new_start))
+                start = new_start + timedelta(days=1)
+
+        return output
 
     @staticmethod
     def format_range(start, end):
